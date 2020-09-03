@@ -19,6 +19,7 @@ converter ={
 'general': general,
 '': general,
 ' ': general,
+'cw, dance, music, theatre, va academics, or admissions - Or leave blank for a general post': general,
 'admissions': admissions,
 'academics': academics,
 'music': music,
