@@ -1,0 +1,300 @@
+# My Ignored Files
+*.zip
+*.7z
+*.csv
+*.xlsx
+logs/
+Social Media Posts/*
+test.*
+temp.*
+cleaned_tags*.txt
+common_names_list.txt
+deleted2.txt
+*tags.txt
+*.xlsx
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+funraise/
+Transactions_Matched.txt
+all_transaction_rows.txt
+matched_transaction_rows.txt
+unmatched_rows.txt
+performance log*.txt
+unmatched*.txt
+*.xlob
+filehistorylog/
+Transaction Numbers.txt
+tags*.txt
+*Names*.txt
+.~*
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+Fixed Names.txt
+logs/Fixed Names 34.txt
+logs/Fixed Names 35.txt
+logs/Fixed Names 36.txt
+logs/Fixed Names 37.txt
+logs/Fixed Names 38.txt
+logs/Fixed Names 39.txt
+logs/log 1.txt
+logs/log 2.txt
+logs/log 3.txt
+logs/log 4.txt
+logs/log 5.txt
+logs/log 6.txt
+logs/log 7.txt
+logs/log 8.txt
+logs/log 9.txt
+logs/log 10.txt
+logs/log 11.txt
+logs/log 12.txt
+logs/log 13.txt
+logs/log 14.txt
+logs/log 15.txt
+logs/log 16.txt
+logs/log 17.txt
+logs/log 18.txt
+logs/log 19.txt
+logs/log 20.txt
+logs/log 21.txt
+logs/log 22.txt
+logs/log 23.txt
+logs/log 24.txt
+logs/log 25.txt
+logs/log 26.txt
+logs/log 27.txt
+logs/log 28.txt
+logs/log 29.txt
+logs/log 30.txt
+logs/log 31.txt
+logs/log 32.txt
+logs/log 33.txt
+logs/log 34.txt
+logs/log 35.txt
+logs/log 36.txt
+logs/log 37.txt
+logs/log 38.txt
+logs/log 39.txt
+logs/Problem Names 35.txt
+logs/Problem Names 36.txt
+logs/Problem Names 37.txt
+logs/Problem Names 38.txt
+logs/Problem Names 39.txt
+logs/sample_output 37.txt
+logs/sample_output 38.txt
+logs/sample_output 39.txt
+logs/Duplicate Records 45.txt
+logs/Duplicate Records 47.txt
+logs/Duplicate Records 48.txt
+logs/Duplicate Records 49.txt
+logs/Duplicate Records 50.txt
+logs/Duplicate Records 51.txt
+logs/Duplicate Records 52.txt
+logs/Duplicate Records 55.txt
+logs/Duplicate Records 56.txt
+logs/Duplicate Records 57.txt
+logs/Duplicate Records 58.txt
+logs/Duplicate Records 59.txt
+logs/Duplicate Records 60.txt
+logs/Fixed Names 40.txt
+logs/Fixed Names 41.txt
+logs/Fixed Names 42.txt
+logs/Fixed Names 43.txt
+logs/Fixed Names 44.txt
+logs/Fixed Names 45.txt
+logs/Fixed Names 46.txt
+logs/Fixed Names 47.txt
+logs/Fixed Names 48.txt
+logs/Fixed Names 49.txt
+logs/Fixed Names 50.txt
+logs/Fixed Names 51.txt
+logs/Fixed Names 52.txt
+logs/Fixed Names 53.txt
+logs/Fixed Names 54.txt
+logs/Fixed Names 55.txt
+logs/Fixed Names 56.txt
+logs/Fixed Names 57.txt
+logs/Fixed Names 58.txt
+logs/Fixed Names 59.txt
+logs/Fixed Names 60.txt
+logs/log 40.txt
+logs/log 41.txt
+logs/log 42.txt
+logs/log 43.txt
+logs/log 44.txt
+logs/log 45.txt
+logs/log 46.txt
+logs/log 47.txt
+logs/log 48.txt
+logs/log 49.txt
+logs/log 50.txt
+logs/log 51.txt
+logs/log 52.txt
+logs/log 53.txt
+logs/log 54.txt
+logs/log 55.txt
+logs/log 56.txt
+logs/log 57.txt
+logs/log 58.txt
+logs/log 59.txt
+logs/log 60.txt
+logs/Problem Names 42.txt
+logs/Problem Names 44.txt
+logs/Problem Names 45.txt
+logs/Problem Names 47.txt
+logs/Problem Names 50.txt
+logs/Problem Names 51.txt
+logs/Problem Names 56.txt
+logs/Problem Names 57.txt
+logs/Problem Names 58.txt
+logs/Problem Names 59.txt
+logs/Problem Names 60.txt
+logs/Record Duplicate Log 40.txt
+logs/Record Duplicate Log 41.txt
+logs/Record Duplicate Log 42.txt
+logs/Record Duplicate Log 43.txt
+logs/Record Duplicate Log 44.txt
+logs/Record Duplicate Log 45.txt
+logs/Record Duplicate Log 46.txt
+logs/Record Duplicate Log 47.txt
+logs/Record Duplicate Log 48.txt
+logs/Record Duplicate Log 49.txt
+logs/Record Duplicate Log 50.txt
+logs/Record Duplicate Log 51.txt
+logs/Record Duplicate Log 52.txt
+logs/Record Duplicate Log 53.txt
+logs/Record Duplicate Log 54.txt
+logs/Record Duplicate Log 55.txt
+logs/Record Duplicate Log 56.txt
+logs/Record Duplicate Log 57.txt
+logs/Record Duplicate Log 58.txt
+logs/Record Duplicate Log 59.txt
+logs/Record Duplicate Log 60.txt
+.~lock.ExportAllJournalEntries-MERGED_DEDUPED_091420 - Copy.xlsx#
+.~lock.ExportAllJournalEntries-MERGED_DEDUPED_091420 - Copy.xlsx#
+.~lock.ExportAllJournalEntries-MERGED_DEDUPED_091420 - Copy.xlsx#

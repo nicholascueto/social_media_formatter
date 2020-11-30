@@ -19,7 +19,6 @@ converter ={
 'general': general,
 '': general,
 ' ': general,
-'cw, dance, music, theatre, va academics, or admissions - Or leave blank for a general post': general,
 'admissions': admissions,
 'academics': academics,
 'music': music,
@@ -50,6 +49,8 @@ emoji_tickets = emoji.emojize(':ticket:')
 #spits out tags from list by name
 def tagerator(category = general, numtags = 100):
     x = 0
+    # if type(category) == None:
+    #     category = general
     tags = []
     for tag in category:
         tags.append(category[x])
@@ -100,21 +101,21 @@ tickets = str(tickets)
 tickets = tickets.lower()
 ticketed = True if tickets == 'y' else False
 
-#link?
-if tickets == 'y' and link == None or 'y':
-    if category[0] == 't':
-        link = f'nmschoolforthearts.org/theatre-tickets/'
-    elif category[0] == 'm':
-        link = f'nmschoolforthearts.org/music-tickets/'
-    elif category[0] == 'd':
-        link = f'nmschoolforthearts.org/dance-tickets/'
-    elif category[0] == 'c':
-        link = f'nmschoolforthearts.org/cw-tickets/'
-    else:
-        link = f'nmschoolforthearts.org/tickets/'
-else:
-    # link = input('\nAny link? If just the standard events link, type "Y", else type the link. (If No "N" or Leave Blank) \n> ')
-    link = link.lower()
+# #link?
+# if tickets == 'y' and link == None or 'y':
+#     if category[0] == 't':
+#         link = f'nmschoolforthearts.org/theatre-tickets/'
+#     elif category[0] == 'm':
+#         link = f'nmschoolforthearts.org/music-tickets/'
+#     elif category[0] == 'd':
+#         link = f'nmschoolforthearts.org/dance-tickets/'
+#     elif category[0] == 'c':
+#         link = f'nmschoolforthearts.org/cw-tickets/'
+#     else:
+#         link = f'nmschoolforthearts.org/tickets/'
+# else:
+#     # link = input('\nAny link? If just the standard events link, type "Y", else type the link. (If No "N" or Leave Blank) \n> ')
+#     link = link.lower()
 #post text
 # post = input('\nPlease enter the text for your post:\n\n')
 
