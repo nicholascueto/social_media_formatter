@@ -57,27 +57,27 @@ def tagerator(category = general, numtags = 100):
         x += 1
         if x >= numtags:
             break
-    print(' '.join(tags), file=open(file, "a", encoding="utf-8"))    
+    print(' '.join(tags), file=open(file, "a", encoding="utf-8"))
 
 
-# Very basic window.  Return values as a dictionary      
+# Very basic window.  Return values as a dictionary
 
-layout = [      
-            [sg.Text('Please enter the following information.')],      
+layout = [
+            [sg.Text('Please enter the following information.')],
             [sg.Text('What is the category of the post?' , size=(40, 1)), sg.InputText('cw, dance, music, theatre, va academics, or admissions - Or leave blank for a general post', key='_CAT_')],
-            [sg.Text("Is it ticketed?", size=(40, 1)), sg.InputText(key='_TICKET_')],      
+            [sg.Text("Is it ticketed?", size=(40, 1)), sg.InputText(key='_TICKET_')],
             [sg.Text('Link? Y/N If just the standard events link, type "Y".', size=(40, 1)), sg.InputText(key='_LINK_')],
-            [sg.Multiline(size = (90, 5), key='_POST_')],      
-            [sg.Submit(), sg.Cancel()]      
-        ]      
+            [sg.Multiline(size = (90, 5), key='_POST_')],
+            [sg.Submit(), sg.Cancel()]
+        ]
 
 window = sg.Window('Simple data entry GUI', layout)
 
-event, values = window.Read()  
+event, values = window.Read()
 
 window.Close()
 
-category, tickets, link, post = [values['_CAT_'], values['_TICKET_'], values['_LINK_'], values['_POST_']]      
+category, tickets, link, post = [values['_CAT_'], values['_TICKET_'], values['_LINK_'], values['_POST_']]
 
 #Get post content
 #category?
@@ -86,7 +86,7 @@ category, tickets, link, post = [values['_CAT_'], values['_TICKET_'], values['_L
 
 # cw, dance, music, theatre, va academics, or admissions
 
-# - Or leave blank for a general post - 
+# - Or leave blank for a general post -
 
 # Use the name or the first letter.
 # ''')
@@ -129,13 +129,13 @@ ticketed = True if tickets == 'y' else False
 createfile = True #if makefile == 'y' else False
 path = os.getcwd()
 
-#Output File        
+#Output File
 try:
     if createfile == True:
         if not os.path.isdir('.\\Social Media Posts'):
             os.mkdir('.\\Social Media Posts')
     #save output to file
-    # with open(f'.\\Social Media Posts\\{filename}.txt', 'w') as f: 
+    # with open(f'.\\Social Media Posts\\{filename}.txt', 'w') as f:
     #     file = f
 except OSError:
     print('File could not be saved. Directory does not exist and could not be created')
@@ -186,5 +186,5 @@ elif link != 'y' and category == admissions:
     print(f'{emoji_finger_down}Click the link to apply now!{emoji_finger_down}\n{link}', file=open(file, "a", encoding="utf-8"))
 elif link == 'n':
     None
-else: 
+else:
     print(f'\n{emoji_finger_down}Click Here!{emoji_finger_down}\n{link}\n', file=open(file, "a", encoding="utf-8"))
