@@ -64,7 +64,7 @@ def tagerator(category = general, numtags = 100):
 
 layout = [
             [sg.Text('Please enter the following information.')],
-            [sg.Text('What is the category of the post?' , size=(40, 1)), sg.InputText('cw, dance, music, theatre, va academics, or admissions - Or leave blank for a general post', key='_CAT_')],
+            [sg.Text('What is the category of the post?' , size=(40, 1)), sg.InputText(default_text='cw, dance, music, theatre, va academics, or admissions - Or leave blank for a general post', key='_CAT_')],
             [sg.Text("Is it ticketed?", size=(40, 1)), sg.InputText(key='_TICKET_')],
             [sg.Text('Link? Y/N If just the standard events link, type "Y".', size=(40, 1)), sg.InputText(key='_LINK_')],
             [sg.Multiline(size = (90, 5), key='_POST_')],
@@ -93,7 +93,7 @@ category, tickets, link, post = [values['_CAT_'], values['_TICKET_'], values['_L
 
 #get category
 category = str(category)
-category = category.lower()
+category = category.lower() if category != 'cw, dance, music, theatre, va academics, or admissions - Or leave blank for a general post' else 'general'
 tags = converter.get(category)
 
 #ticketed?
@@ -144,7 +144,6 @@ except OSError:
 print('\nEnter the file name:')
 filename = input(' > ')
 file = '.\\Social Media Posts\\' + filename + '.txt'
-print(f'\n\n{filename} was saved to {path}\\Social Media Posts\\{filename}.txt.\n\n')
 
 #Print Posts
 #Facebook
@@ -162,7 +161,7 @@ elif link == 'n':
 else:
     print(f'{link}\n{emoji_finger_down}Click Here for more info!{emoji_finger_down}', file=open(file, "a", encoding="utf-8"))
 
-#Instagram 
+#Instagram
 print('\n\nINSTAGRAM', file=open(file, "a", encoding="utf-8"))
 if ticketed:
     print(f'\n{post}.\n.\nClick the {emoji_chain_link}link{emoji_chain_link} in the bio to buy {emoji_tickets}tickets{emoji_tickets}!\n.\n.\n.', file=open(file, "a", encoding="utf-8"))
@@ -188,3 +187,5 @@ elif link == 'n':
     None
 else:
     print(f'\n{emoji_finger_down}Click Here!{emoji_finger_down}\n{link}\n', file=open(file, "a", encoding="utf-8"))
+
+input(f'\n\n{filename} was saved to {path}\\Social Media Posts\\{filename}.txt.\n\nPress any key to exit.')
