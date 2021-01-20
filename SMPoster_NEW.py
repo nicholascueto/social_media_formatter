@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import os
+from pathlib import Path
 import PySimpleGUI as sg
 import emoji
 import io
@@ -127,13 +128,13 @@ ticketed = True if tickets == 'y' else False
 # makefile = makefile.lower()
 # Always make file
 createfile = True #if makefile == 'y' else False
-path = os.getcwd()
+path = Path(os.getcwd())
 
 #Output File
 try:
     if createfile == True:
-        if not os.path.isdir('.\\Social Media Posts'):
-            os.mkdir('.\\Social Media Posts')
+        if not os.path.isdir(Path('./Social Media Posts')):
+            os.mkdir(Path('./Social Media Posts'))
     #save output to file
     # with open(f'.\\Social Media Posts\\{filename}.txt', 'w') as f:
     #     file = f
@@ -143,7 +144,7 @@ except OSError:
 
 print('\nEnter the file name:')
 filename = input(' > ')
-file = '.\\Social Media Posts\\' + filename + '.txt'
+file = Path(f'./Social Media Posts/{filename}.txt')
 
 #Print Posts
 #Facebook
